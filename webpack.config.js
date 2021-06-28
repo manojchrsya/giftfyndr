@@ -47,6 +47,8 @@ Encore.setPublicPath('/assets')
 */
 Encore.addEntry('app', './resources/js/app.js')
 
+// Encore.addEntry('bootstrap', './resources/js/popper.min.js')
+// Encore.addEntry('bootstrap', './resources/js/bootstrap.min.js')
 /*
 |--------------------------------------------------------------------------
 | Copy assets

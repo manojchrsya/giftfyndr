@@ -1,6 +1,6 @@
 {
   "extends": "./node_modules/adonis-preset-ts/tsconfig",
-  "include": ["**/*"],
+  "include": ["**/*", "resources/js/jquery-3.3.1.slim.min.js"],
   "exclude": ["node_modules", "build"],
   "compilerOptions": {
     "outDir": "build",
