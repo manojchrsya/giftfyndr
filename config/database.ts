@@ -45,7 +45,11 @@ const databaseConfig: DatabaseConfig = {
       migrations: {
         naturalSort: true,
       },
-      healthCheck: false,
+      pool: {
+        min: 2,
+        max: 20,
+      },
+      healthCheck: true,
       debug: false,
     },
   },
