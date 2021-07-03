@@ -19,10 +19,11 @@
 */
 
 import Route from '@ioc:Adonis/Core/Route';
-// import UsersController from 'App/Controllers/Http/UsersController';
+// import HomeController from 'App/Controllers/Http/HomeController';
 
-// Route.get('/', async (ctx) => {
-//   return UsersController.index(ctx);
-// });
+Route.get('/', 'HomeController.index');
+Route.get('/login', 'HomeController.login');
+Route.get('/register', 'HomeController.register');
 
-Route.resource('/', 'UsersController');
+Route.post('/user/login', 'UsersController.login');
+Route.post('/user/register', 'UsersController.register');

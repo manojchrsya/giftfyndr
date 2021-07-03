@@ -1,0 +1,52 @@
+@layout('layouts/default')
+@set('title', 'Giftfyndr - Simple application to suggest Gift Items with specific question asked.')
+
+@section('body')
+  <main>
+    <div class="album py-5 bg-light">
+      <div class="container ">
+        <div class="card mx-auto" style="width: 30rem;">
+          <div class="card-header"> Log In </div>
+          <div class="card-body">
+            <form id="loginform" class="form-horizontal" role="form">
+              <div class="row">
+                <div class="col col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="firstName"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" placeholder="First Name" aria-label="firstName" aria-describedby="firstName">
+                  </div>
+                </div>
+                <div class="col col-md-6">
+                  <div class="input-group mb-3">
+                    <span class="input-group-text" id="lastName"><i class="bi bi-person"></i></span>
+                    <input type="text" class="form-control" placeholder="Last Name" aria-label="lastName" aria-describedby="lastName">
+                  </div>
+                </div>
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="basic-addon1"><i class="bi bi-envelope"></i></span>
+                <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="basic-addon1">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="password"><i class="bi bi-lock"></i></span>
+                <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="password">
+              </div>
+              <div class="input-group">
+                <div class="form-check ms-md-auto">
+                  <p class="card-text bg-light" class="text-right" style="transform: rotate(0);">
+                    Already have an account?
+                    <a href="/login" class="text-warning stretched-link">Login here</a>.
+                  </p>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Register</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+@end
