@@ -26,4 +26,5 @@ Route.get('/login', 'HomeController.login');
 Route.get('/register', 'HomeController.register');
 
 Route.post('/user/login', 'UsersController.login');
+Route.post('/user/logout', 'UsersController.logout');
 Route.post('/user/register', 'UsersController.register');
